@@ -47,29 +47,8 @@ Si tu utilises VS Code, tu peux aussi ouvrir le dossier et faire **F5** en chois
 
 ---
 
-### 3. Configuration spécifique au TD
 
-Dans `lib/api.dart` :
-
-- L’URL des **articles** pour un fournisseur est :
-  - `http://polyedre.eu:8000/polyfx/cgi/getart.cgi?frs=<NUM_FRS>`
-- L’URL des **fournisseurs (étudiants)** dépend du TD :
-  - TD1 : `getfrstd1.cgi`
-  - TD2 : `getfrstd2.cgi` (configurée par défaut dans ce projet)
-
-Dans `lib/main.dart` :
-
-- La variable `_currentFrs` contient le **numéro de fournisseur par défaut** (celui de l’étudiant) :
-
-```dart
-String _currentFrs = '401000394'; // à adapter avec ton numéro
-```
-
-Pense à la modifier avant de lancer si besoin.
-
----
-
-### 4. Fonctionnement de l’application
+### 3. Fonctionnement de l’application
 
 - **Écran principal**
   - AppBar avec le titre **“Boutique IUT”**.
@@ -89,24 +68,3 @@ Les données sont lues **dynamiquement** depuis l’ERP : si un libellé ou une
 
 ---
 
-### 5. Mise sur GitHub (rappel rapide)
-
-Dans le dossier du projet :
-
-```bash
-git init
-git add .
-git commit -m "Initial commit - Boutique IUT Flutter ERP frontend"
-git branch -M main
-git remote add origin https://github.com/<ton-pseudo>/front_erp.git
-git push -u origin main
-```
-
-Ensuite, tes camarades peuvent simplement :
-
-```bash
-git clone https://github.com/<ton-pseudo>/front_erp.git
-cd front_erp
-flutter pub get
-flutter run -d linux   # ou -d windows
-```
