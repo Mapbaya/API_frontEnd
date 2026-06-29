@@ -1,5 +1,8 @@
 ## Boutique IUT – Frontend Flutter pour l’ERP
 
+> **EN:** Flutter desktop/web frontend for the IUT pedagogical ERP — lists supplier articles via REST APIs and shows product detail pages.  
+> **FR:** Application Flutter (desktop/web/mobile) qui consomme les webservices de l’ERP pédagogique.
+
 Application Flutter (desktop/web/mobile possible) qui consomme les **webservices de l’ERP pédagogique** pour :
 
 - **Lister les articles** d’un fournisseur (nom, code, prix, description, image).
@@ -31,8 +34,8 @@ Assure‑toi d’avoir au moins un device desktop disponible (`Linux` ou `Window
 Dans un terminal :
 
 ```bash
-git clone https://github.com/<ton-pseudo>/front_erp.git
-cd front_erp
+git clone https://github.com/Mapbaya/API_frontEnd.git
+cd API_frontEnd
 flutter pub get
 ```
 
